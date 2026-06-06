@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw; /* Full screen width */
+  background: linear-gradient(120deg, #f8ffae 0%, #43c6ac 100%);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.profile-box {
+  background: #ffffff;
+  padding: 48px 44px;
+  border-radius: 18px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px; /* Reasonable max width */
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 36px rgba(67,198,172,0.18);
+  border: 2px solid #43c6ac;
+  transition: box-shadow 0.2s, border 0.2s;
+  margin: 0;
+}
+
+.profile-box:hover {
+  box-shadow: 0 10px 32px rgba(0,0,0,0.18);
+}
+
+.profile-avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(67,198,172,0.24);
+  object-fit: cover;
+  border: 6px solid rgba(255,255,255,0.85);
+}
+
+@media (max-width: 480px) {
+  .profile-avatar {
+    width: 72px;
+    height: 72px;
+  }
+  .profile-box {
+    width: 96%;
+    padding: 24px 16px;
+    min-height: auto;
+  }
+}
+
+.profile-title {
+  text-align: center;
+  color: #43c6ac;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.profile-details {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.profile-details p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+.profile-details strong {
+  color: #ff9800;
+}
+
+.profile-error {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.funds-btn {
+  margin-top: 16px;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(67,198,172,0.12);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.funds-btn:focus {
+  outline: 2px solid #43c6ac;
+  outline-offset: 2px;
+}
+
+.funds-btn:hover {
+  background: linear-gradient(90deg, #f8ffae 0%, #43c6ac 100%);
+  color: #43c6ac;
+  box-shadow: 0 4px 16px rgba(67,198,172,0.18);
+}

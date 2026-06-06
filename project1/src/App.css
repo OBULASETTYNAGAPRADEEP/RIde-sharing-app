@@ -1,0 +1,33 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding-top: 80px; /* Adjust for fixed Navbar */
+  text-align: center;
+}
+
+/* Apply background images */
+.home-container, .login-container, .ride-confirmation-container,
+.live-tracking-container, .payment-container, .ride-history-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background Images */
+.home-container { background: url('/assets/home-bg.jpg') no-repeat center center/cover; }
+.login-container { background: url('/assets/login-bg.jpg') no-repeat center center/cover; }
+.ride-confirmation-container { background: url('/assets/confirm-bg.jpg') no-repeat center center/cover; }
+.live-tracking-container { background: url('/assets/tracking-bg.jpg') no-repeat center center/cover; }
+.payment-container { background: url('/assets/payment-bg.jpg') no-repeat center center/cover; }
+.ride-history-container { background: url('/assets/history-bg.jpg') no-repeat center center/cover; }
+
+/* Increase Font Sizes */
+h1 { font-size: 36px; }
+h2 { font-size: 28px; }
+p { font-size: 18px; }
